@@ -111,8 +111,8 @@ def dfs(maze, n_rows, n_cols, start, end):
                 st.append((next[0], next[1]))
                 maze[next[1]][next[0]].visited = True
                 maze[next[1]][next[0]].prev = (x, y)
-                if maze[y][x].is_teleport:
-                    print(x, y, maze[y][x].prev)
+                #if maze[y][x].is_teleport:
+                #    print(x, y, maze[y][x].prev)
 
     while (x != maze[y][x].prev[0] or y != maze[y][x].prev[1]):
         rect = ds.pygame.Rect(x*blockSize, y*blockSize, blockSize, blockSize)
